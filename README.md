@@ -22,9 +22,9 @@ https://github.com/khaleedolawale/Portfolio
 ---
 
 ## 📸 Screenshot
-![Portfolio Preview](port1.png)
-![Portfolio Preview](port2.png)
-![Portfolio Preview](port3.png)
+![Portfolio Preview](/port1.png)
+![Portfolio Preview](/port2.png)
+![Portfolio Preview](/port3.png)
 
 ---
 
