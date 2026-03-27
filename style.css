@@ -241,6 +241,8 @@ section { position: relative; z-index: 2; }
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
 }
 
 .btn-primary {
@@ -782,6 +784,9 @@ footer strong { color: var(--accent); }
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
+
 }
 
 .hero-avatar-wrap {
