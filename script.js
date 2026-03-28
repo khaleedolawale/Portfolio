@@ -170,3 +170,28 @@ const sectionObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.45 });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// ── FEATURED PROJECT SCREENSHOT TABS ──
+const ssTabs = document.querySelectorAll('.ss-tab');
+const ssImg  = document.getElementById('ssImg');
+
+const ssMap = {
+  admin:   'images/projects/hospital-admin.png',
+  doctor:  'images/projects/hospital-doctor.png',
+  patient: 'images/projects/hospital-patient.png'
+};
+
+ssTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    ssTabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    if (ssImg) {
+      ssImg.style.opacity = '0';
+      setTimeout(() => {
+        ssImg.src = ssMap[tab.dataset.tab];
+        ssImg.alt = tab.textContent;
+        ssImg.style.opacity = '1';
+      }, 200);
+    }
+  });
+});
